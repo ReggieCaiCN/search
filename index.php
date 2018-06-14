@@ -51,7 +51,7 @@ function formatBytes($bytes, $precision = 2) {
         }
 	
         .search-form .name{
-		width: calc(100% - 100px);
+		width: calc(100% - 200px);
     		margin: 1em 0;
 	    	height: 30px;
 	    	line-height: 30px;
@@ -68,22 +68,24 @@ function formatBytes($bytes, $precision = 2) {
         }
 		.submit{
 			padding: 0 20px;
-			line-height: 2;
-			margin-left: 10px;
+			line-height: 30px;
+			margin: 1em 0 1em 1em;
 			background-color: white;
-		background-image: url('/img/logo.jpg');
-		width: 40px;
-		height: 40px;
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: center;
-		display: inline-block;
+			background-image: url('/img/logo.jpg');
+			width: 40px;
+			height: 40px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			display: inline-block;
+		        vertical-align: middle;
 		}
 		.radio-box label{
     cursor: pointer;
 		}	
 .radio {
   margin: 0.5rem;
+	display: inline;
 }
 .radio input[type="radio"] {
   position: absolute;
