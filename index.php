@@ -71,7 +71,7 @@ function formatBytes($bytes, $precision = 2) {
 			line-height: 30px;
 			margin: 1em 0 1em 1em;
 			background-color: white;
-			background-image: url('/img/logo.jpg');
+			background-image: url('/img/submit.jpg');
 			width: 40px;
 			height: 40px;
 			background-size: contain;
