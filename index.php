@@ -169,7 +169,7 @@ function formatBytes($bytes, $precision = 2) {
 			</div>
         </form>
         <p style="margin: 1em 0;">现在已经有<?php if($count->num_rows> 0){$total = $count->fetch_row();echo $total[0];}else{echo 0;} ?>个热乎乎的种子</p>
-        <a class="suggest" href="index.php?name=<?php echo date('Y年m月合集', strtotime('-1 month')); ?>"><?php echo date('Y年m月合集', strtotime('-1 month')); ?></a>
+        <a class="suggest" href="index.php?name=<?php echo date('Y年n月合集', strtotime('-1 month')); ?>"><?php echo date('Y年n月合集', strtotime('-1 month')); ?></a>
         <br>
         <table cellspacing="0" class="table table-bordered">
           <thead>
