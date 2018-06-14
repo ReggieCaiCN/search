@@ -136,7 +136,7 @@ function formatBytes($bytes, $precision = 2) {
   <div class="demo-content">
 
 <!-- 简单搜索页 ================================================== -->
-    <div class="row">
+    <div class="clearfix">
       <div>
 	<div class="logo-box">
 		<img src="/img/logo.jpg" class="logo" />
