@@ -47,7 +47,7 @@ function formatBytes($bytes, $precision = 2) {
 <style>
         .demo-content{
                 margin: 1em auto;
-		width: 100%;
+		width: 80%;
         }
 	
         .search-form .name{
