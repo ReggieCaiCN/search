@@ -47,21 +47,15 @@ function formatBytes($bytes, $precision = 2) {
 <style>
         .demo-content{
                 margin: 1em auto;
+		width: 100%;
+        }
+	
+        .search-form .name{
 		width: calc(100% - 100px);
     		margin: 1em 0;
 	    	height: 30px;
 	    	line-height: 30px;
-        }
-        .search-form .name{
-		width: 100%;
-		margin: 1em 0;
-		background-color: white;
-		background-image: url('/img/logo.jpg');
-		width: 40px;
-		height: 40px;
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: center;
+		display: inline-block;
         }
         body{
                 font-size: 1.2em;
@@ -75,7 +69,15 @@ function formatBytes($bytes, $precision = 2) {
 		.submit{
 			padding: 0 20px;
 			line-height: 2;
-			margin: 1em 0;
+			margin-left: 10px;
+			background-color: white;
+		background-image: url('/img/logo.jpg');
+		width: 40px;
+		height: 40px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: inline-block;
 		}
 		.radio-box label{
     cursor: pointer;
@@ -139,6 +141,7 @@ function formatBytes($bytes, $precision = 2) {
         <form class="search-form" action="index.php" method="get">
 			<div>
 			<input class="name" type="text" name="name" placeholder="<?php echo $search; ?>" value="<?php echo $search; ?>">
+			<input class="submit" type="submit" value="">
 			</div>
 			<div class="radio-box">
                         <div class="radio">  
@@ -157,9 +160,6 @@ function formatBytes($bytes, $precision = 2) {
 			<input id="size3" type="radio" name="size" value="1073741824" />
 			<label for="size3" class="radio-label">1G</label>
 			</div>
-			</div>
-			<div>
-				<input class="submit" type="submit" value="搜索">
 			</div>
         </form>
         <p style="margin: 1em 0;">现在已经有<?php if($count->num_rows> 0){$total = $count->fetch_row();echo $total[0];}else{echo 0;} ?>个热乎乎的种子</p>
