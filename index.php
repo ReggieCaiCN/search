@@ -130,7 +130,7 @@ function formatBytes($bytes, $precision = 2) {
 }
 .logo-box .logo{
 	margin: 1em auto;
-	display: block;
+	display: none;
 	width: 100px;
 }
 </style>
@@ -151,19 +151,19 @@ function formatBytes($bytes, $precision = 2) {
 			</div>
 			<div class="radio-box">
                         <div class="radio">  
-			<input id="size0" type="radio" name="size" value="0" />
+			<input id="size0" type="radio" name="size" <?php if(!$size){echo "checked='checked'";} ?> value="0" />
 			<label for="size0" class="radio-label">0</label>
 			</div>
 			<div class="radio">	
-			<input id="size1" type="radio" name="size" value="314572800" />
+			<input id="size1" type="radio" name="size" <?php if($size==314572800){echo "checked='checked'";} ?> value="314572800" />
 			<label for="size1" class="radio-label">300M</label>
 			 </div>
                         <div class="radio">
-			<input id="size2" type="radio" checked="checked" name="size" value="524288000" />
+			<input id="size2" type="radio" <?php if($size==524288000){echo "checked='checked'";} ?> name="size" value="524288000" />
 			<label for="size2" class="radio-label">500M</label>
 			</div>
                         <div class="radio">
-			<input id="size3" type="radio" name="size" value="1073741824" />
+			<input id="size3" type="radio" name="size" <?php if($size==1073741824){echo "checked='checked'";} ?> value="1073741824" />
 			<label for="size3" class="radio-label">1G</label>
 			</div>
 			</div>
