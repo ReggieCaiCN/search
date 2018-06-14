@@ -46,12 +46,22 @@ function formatBytes($bytes, $precision = 2) {
   <link href="http://g.alicdn.com/bui/bui/1.1.21/css/bs3/bui.css" rel="stylesheet">
 <style>
         .demo-content{
-                width: 80%;
                 margin: 1em auto;
+		width: calc(100% - 100px);
+    		margin: 1em 0;
+	    	height: 30px;
+	    	line-height: 30px;
         }
         .search-form .name{
-                width: 100%;
+		width: 100%;
 		margin: 1em 0;
+		background-color: white;
+		background-image: url('/img/logo.jpg');
+		width: 40px;
+		height: 40px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
         }
         body{
                 font-size: 1.2em;
@@ -110,6 +120,11 @@ function formatBytes($bytes, $precision = 2) {
 .radio input[type="radio"] + .radio-label:empty:before {
   margin-right: 0;
 }
+.logo-box .logo{
+	margin: 1em auto;
+	display: block;
+	width: 100px;
+}
 </style>
 </head>
 <body>
@@ -118,7 +133,9 @@ function formatBytes($bytes, $precision = 2) {
 <!-- 简单搜索页 ================================================== -->
     <div class="row">
       <div>
-
+	<div class="logo-box">
+		<img src="/img/logo.jpg" class="logo" />
+	 </div>
         <form class="search-form" action="index.php" method="get">
 			<div>
 			<input class="name" type="text" name="name" placeholder="<?php echo $search; ?>" value="<?php echo $search; ?>">
