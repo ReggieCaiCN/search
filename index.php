@@ -80,6 +80,9 @@ function formatBytes($bytes, $precision = 2) {
 			display: inline-block;
 		        vertical-align: middle;
 			float: right;
+		        border-radius: 4px;
+			outline: none;
+			border: 1px solid #cccccc;
 		}
 		.radio-box label{
     cursor: pointer;
