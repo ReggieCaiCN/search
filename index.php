@@ -51,7 +51,7 @@ function formatBytes($bytes, $precision = 2) {
         }
 	
         .search-form .name{
-		width: calc(100% - 200px);
+		width: calc(100% - 150px);
     		margin: 1em 0;
 	    	height: 30px;
 	    	line-height: 30px;
@@ -79,6 +79,7 @@ function formatBytes($bytes, $precision = 2) {
 			background-position: center;
 			display: inline-block;
 		        vertical-align: middle;
+			float: right;
 		}
 		.radio-box label{
     cursor: pointer;
